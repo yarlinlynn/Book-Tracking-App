@@ -140,9 +140,48 @@ button, input, select, optgroup, textarea {
     display: none;
 }
 
-.nav {
+/*-----------------------------------*\
+#ADMIN PANEL BUTTONS
+\*-----------------------------------*/
+
+nav {
     position: fixed;
-    bottom: 1rem;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50px, -50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #d9d8d8;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
 }
+
+/*-----------------------------------*\
+#ADMIN PANEL PAGES 
+\*-----------------------------------*/
+
+.admin-page { width: 100%; }
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/*-----------------------------------*\
+#TBR PAGE CONTENT
+\*-----------------------------------*/
+
+/* #tbr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    flex-direction: column;
+    gap: 1rem;
+} */

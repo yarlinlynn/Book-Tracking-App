@@ -14,3 +14,18 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
         document.getElementById("alert-message").textContent = `Access denied. Please try again`;
     }
 })
+
+// CHANGE BETWEEN TBR, MONTHLY READS & FAVORUITES PAGE CONTENT:
+const pageBtns = document.querySelectorAll("[data-page]");
+const adminPages = document.querySelectorAll(".page");
+
+pageBtns.forEach( btn => {
+    btn.addEventListener("click", () => {
+        const activePage = btn.dataset.page;
+        adminPages.forEach(page => {
+            page.classList.remove("active");
+        });
+
+        document.getElementById(activePage).classList.add("active");
+    });
+});
