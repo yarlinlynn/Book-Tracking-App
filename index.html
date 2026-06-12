@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNook</title>
+
+    <!-- styles: -->
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+
+    <!-- icons: -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body>
+
+    <!-- login screen -->
+    <div id="admin_login">
+        <div class="login-container">
+            <!-- login panel content -->
+            <div class="login-content">
+                <h2 class="subtitle">Admin Panel</h2>
+                <form id="login-form">
+                    <div class="email-container">
+                        <p>Email Address</p>
+                        <input id="email" placeholder="your@email.com" required="" type="email" value="admin@email.com" />
+                    </div>
+                    <div class="password-container">
+                        <p>Password</p>
+                        <input id="password" placeholder="Enter your password" required="" type="password" value="adminloginpanel" />
+                    </div>
+                    <button type="submit" class="login_btn">Login</button>
+                    <p id="alert-message"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- main project -->
+    <main id="admin_panel">
+        <!-- naviagtion different pages -->
+        <div class="nav">
+            <button class="collections">
+                <i class="ri-book-2-fill"></i>
+            </button>
+            <button class="reads">
+                <i class="ri-book-open-fill"></i>
+                <i class="ri-calendar-todo-fill"></i>
+            </button>
+            <button class="favourites">
+                <i class="ri-poker-hearts-fill"></i>
+            </button>
+        </div>
+
+        <section id="collections">
+            <div class="book_collections">
+                <p>No books added yet</p>
+                <button class="add_collection"></button>
+            </div>
+        </section>
+        <section id="monthly_reads"></section>
+        <section id="favourites"></section>
+    </main>
+    
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
