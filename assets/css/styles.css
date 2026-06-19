@@ -57,6 +57,7 @@ button, input, select, optgroup, textarea {
     opacity: 1;
     background-color: #0000;
     border-radius: 0;
+    border: none;
 }
 
 /*-----------------------------------*\
@@ -67,6 +68,10 @@ button, input, select, optgroup, textarea {
     background-color: var(--color-gray-50);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .login-container {
@@ -140,6 +145,14 @@ button, input, select, optgroup, textarea {
     display: none;
 }
 
+#admin-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
 /*-----------------------------------*\
 #ADMIN PANEL BUTTONS
 \*-----------------------------------*/
@@ -157,6 +170,8 @@ nav {
     padding: 1rem 1.5rem;
     border-radius: 2rem;
 }
+
+nav button i { font-size: 1.5rem; }
 
 /*-----------------------------------*\
 #ADMIN PANEL PAGES 
@@ -176,12 +191,17 @@ nav {
 #TBR PAGE CONTENT
 \*-----------------------------------*/
 
-/* #tbr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 50%;
-    flex-direction: column;
-    gap: 1rem;
-} */
+#tbr p {
+    color: var(--color-gray-700);
+}
+
+#tbr button {
+    background: black;
+    padding: 10px;
+    border-radius: 2rem;
+    color: white;
+    margin-top: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
