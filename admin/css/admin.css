@@ -1,0 +1,95 @@
+
+/*-----------------------------------*\
+# ADMIN PANEL
+\*-----------------------------------*/
+
+#admin_panel {
+    background-color: var(--color-gray-50);
+    min-height: 100vh;
+    display: none;
+}
+
+#admin-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/*-----------------------------------*\
+# ADMIN PAGE BUTTONS : ACTIVE PAGES
+\*-----------------------------------*/
+
+nav {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50px, -50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #d9d8d8;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+
+nav button i { font-size: 1.5rem; }
+
+.admin-page { width: 100%; }
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/*-----------------------------------*\
+# TBR PAGE
+\*-----------------------------------*/
+
+#tbr p {
+    color: var(--color-gray-700);
+}
+
+#tbr button {
+    background: black;
+    padding: 10px;
+    border-radius: 2rem;
+    color: white;
+    margin-top: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+/*-----------------------------------*\
+# ADD BOOK PAGE
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+# BOOK DETAILS PAGE
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+# EDIT BOOK DETAILS PAGE
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+# MONTHLY READS
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+# FAVOURITES
+\*-----------------------------------*/

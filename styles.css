@@ -1,0 +1,73 @@
+
+@import "https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap";
+
+/*-----------------------------------*\
+#CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+    /* colors: */
+    --color-white: #fff;
+    --color-gray-50: oklch(98.5% .002 247.839);
+    --color-gray-200: oklch(92.8% .006 264.531);
+    --color-gray-700: oklch(37.3% .034 259.733);
+    --color-black: #000;
+
+    /* spacing: */
+    --spacing: .25rem;
+
+    /* font sizes: */
+    --text-sm: .875rem;
+    --text-2xl: 1.5rem;
+
+    /* font weight: */
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* width: */
+    --container-md: 28rem;
+
+    /* line height: */
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-sm--line-height: calc(1.25 / .875);
+}
+
+/*-----------------------------------*\
+#RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit;
+}
+
+button, input, select, optgroup, textarea {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    opacity: 1;
+    background-color: #0000;
+    border-radius: 0;
+    border: none;
+}
+
+/*-----------------------------------*\
+# BOOKSHELF PAGE
+\*-----------------------------------*/
+
+
+
+
+
+
+
+

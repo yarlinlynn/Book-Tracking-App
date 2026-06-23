@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <!-- icons: -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
+    <!-- css: -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="./css/admin.css"/>
+</head>
+<body>
+
+    <main id="admin_panel">
+
+        <!-- acts as the tbr, monthly reads & favourite pages with relevant button changing content -->
+        <section id="admin-page">
+
+            <!-- navigation buttons to click through different section contents -->
+            <nav>
+                <!-- tbr -->
+                <button data-page="tbr" class="tbr">
+                    <i class="ri-book-2-fill"></i>
+                </button>
+
+                <!-- monthly reads -->
+                <button data-page="monthly-reads" class="monthly-reads">
+                    <!-- <i class="ri-book-open-fill"></i> -->
+                    <i class="ri-calendar-todo-fill"></i>
+                </button>
+
+                <!-- favourite books -->
+                <button data-page="favourites" class="favourites">
+                    <i class="ri-poker-hearts-fill"></i>
+                </button>
+            </nav>
+
+            <!-- pages -->
+            <section id="tbr" class="page active">
+                <p class="no-books-text">No books added to TBR yet</p>
+                <button>
+                    <i class="ri-add-circle-line"></i>
+                    Add New Book
+                </button>
+            </section>
+            <section id="monthly-reads" class="page">
+                <p>No books added for this month</p>
+                <!-- section books according to month ie; March, June, July -->
+                <section id="monthly-read-databse">
+                    <!-- books for March -->
+                    <div></div>
+
+                    <!-- books for June -->
+                    <div></div>
+                </section>
+            </section>
+            <section id="favourites" class="page">
+                <p>No books added to favourites yet</p>
+            </section>
+
+        </section>
+
+        <!-- basically acts as a modal that open book details or other information spliting the screen half & half -->
+        <section id="new-page">
+            <!-- split screen for adding new book to TBR or opening books details from TBR and a adding a favourite book to favourite section -->
+             <section id="addNewBook"></section>
+             <section id="bookDetails"></section>
+             <section id="addFavourite"></section>
+             <section id="favouritedBook"></section>
+             <section id="favouritedBookDetails"></section>
+        </section>
+    </main>
+    
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>

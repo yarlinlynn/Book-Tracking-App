@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+
+    <!-- css: -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="./css/adminForm.css"/>
+</head>
+<body>
+
+    <!-- login screen -->
+    <main id="admin_login">
+        <section class="login-container">
+            <!-- login panel content -->
+            <div class="login-content">
+                <h2 class="subtitle">Admin Panel</h2>
+                <form action="./adminPanel.html" method="GET" id="login-form">
+                    <div class="email-container">
+                        <p>Email Address</p>
+                        <input id="email" placeholder="your@email.com" required="" type="email" value="admin@email.com" />
+                    </div>
+                    <div class="password-container">
+                        <p>Password</p>
+                        <input id="password" placeholder="Enter your password" required="" type="password" value="adminloginpanel" />
+                    </div>
+                    <button type="submit" class="login_btn">Login</button>
+                    <p id="alert-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
