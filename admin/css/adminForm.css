@@ -30,6 +30,14 @@
     /* box-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a); */
 }
 
+@media screen and (min-width: 600px) {
+    .login-content  { 
+        background-color: var(--color-white);
+        box-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
+    }
+   
+}
+
 .login-content .subtitle {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
