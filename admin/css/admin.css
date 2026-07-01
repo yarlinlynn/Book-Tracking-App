@@ -56,24 +56,71 @@
     height: 12vh;
 }
 
-#admin-naviagtion-btns svg { width: 90%; }
+#admin-naviagtion-btns svg { 
+    width: 70%; 
+    height: auto;
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 1px;
+}
+
+.icon { font-size: 10px; }
 
 @media screen and (min-width: 600px) {
     #admin-naviagtion-btns {
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 30rem;
-        padding: 0.5rem 1rem;
+        max-width: 19rem;
+        height: 10vh;
         gap: 0;
-        bottom: -2rem;
+        bottom: -1.5rem;
+        align-items: end;
     }
+
+    #admin-naviagtion-btns svg { width: 60%;  }
 }
 
 /*-----------------------------------*\
 # TBR PAGE
 \*-----------------------------------*/
 
+.side-panel-icons {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 
+.side-panel-icons i { 
+    cursor: pointer; 
+    color: grey;
+}
+
+.search-container {
+    display: none;
+    position: fixed;
+        top: 4rem;
+    right: 3rem;
+}
+
+.search-container input {
+    background: var(--color-gray-200);
+    width: 15rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.close-search { margin-left: 0.7rem; }
 
 /*-----------------------------------*\
 # ADD BOOK PAGE
